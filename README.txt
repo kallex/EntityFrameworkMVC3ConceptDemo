@@ -14,3 +14,8 @@ Trying out:
 
 
 F5 starts and initializes empty database...
+
+
+For more info:
+http://abstractiondev.wordpress.com/demo-videos/
+http://abstractiondev.wordpress.com/getting-started/
