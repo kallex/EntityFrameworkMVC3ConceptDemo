@@ -1,0 +1,32 @@
+﻿@model ProjectStatusReporting.MVCModel.Project
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Project</legend>
+    @Html.LabelForModel()
+    @Html.EditorForModel(Model.ProjectInfo)
+</fieldset>
+<p>
+@if (Model.ProjectStatusData != null)
+{
+    var groups = Model.ProjectStatusData.GetTopLevelGroups();
+    foreach (var groupItem in groups)
+    {
+        var statusSummary = groupItem.GetGroupSummary(true, Model.ProjectStatusData);
+        @MvcHtmlString.Create("Group: " + groupItem.name);
+        <div> | </div>
+        @MvcHtmlString.Create("Green count: " + statusSummary.GreenCount);
+    }
+        
+}
+</p>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ProjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

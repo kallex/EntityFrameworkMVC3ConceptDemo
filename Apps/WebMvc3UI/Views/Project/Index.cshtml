@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProjectStatusReporting.MVCModel.Project>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @MvcHtmlString.Create(item.ProjectInfo.ProjectInfoName) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectId }) |
+            @Html.ActionLink("Refresh Status", "RefreshStatus", new { id=item.ProjectId }) |
+            @Html.ActionLink("Status Report", "StatusReport", new { id=item.ProjectId })
+        </td>
+    </tr>
+}
+
+</table>
+

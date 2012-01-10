@@ -1,0 +1,298 @@
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error { color: #ff0000; }
+.field-validation-valid { display: none; }
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 1em;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+body,
+#page,
+#page_inner
+{
+    font-size: 1em;
+  /*  width: 100%;*/
+    min-height: 100%;
+    margin: 0px;
+    color: #666;
+    font-family: "Trebuchet MS", Arial, Verdana, Sans-Serif;
+/*    position: absolute;*/
+
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active
+{
+    color: #428000;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active 
+{
+    color: #f99839;
+}
+
+.plated { background: transparent url(commonui/background/plated.png) ; }
+
+#wrap 
+{
+    width: 100%;
+    border: 1px solid #bbb;
+	margin: 10px auto;
+}
+#page
+{
+  /*  height: 100%;
+    width: 100%;*/
+}
+#page_inner
+{
+    background: transparent url(commonui/background/fade_top_dark.png) repeat-x 0 0;
+}
+#site_header 
+{ 
+ /*   width: 100%;*/
+    background: transparent url(commonui/background/background_page_header.png) repeat-x 0 bottom;
+       /*     position: fixed;
+            top: 0;*/
+     padding-bottom: 40px; 
+}
+#site_header .inner 
+{
+}
+    
+#site_title {
+	padding: 7px;
+	margin-left: 240px;
+}
+
+#site_title .apptitle
+{
+    float: right;
+    font-size: 1em;
+    color: #666;
+}
+#site_logo 
+{
+	padding: 7px;
+	float: left;
+	width: 200px;
+}
+#site_login div
+{
+	padding: 5px;
+	float: right;
+	text-align: right;
+}
+
+#site_login #user   
+{ background: transparent url(commonui/icons/user3_16x16.gif) no-repeat left 50%;
+  border-right: 2px groove #ccc; 
+  padding-left: 20px;
+ }
+
+#site_navigation 
+{
+   /* width: 100%;
+    height: 26px;
+    background-color: #4449be;*/
+    position: relative;
+    right: 0;
+    margin-top: -90px;
+
+}
+
+#site_navigation_links
+{
+    float: right;
+    height: 26px;
+}
+
+#site_navigation a
+{
+    text-align: left;
+    float: left;
+    font-weight: bold;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+#site_body 
+{ 
+    text-align: center; /* necessary to center content in IE5/6 */ 
+    
+ /*   position: relative;
+    margin-top: -35px;
+    overflow-y: scroll;*/
+    }
+#site_body .inner 
+{ 
+    text-align: left;
+    width: 80%;
+ /*   min-width: 960px;*/
+    margin: auto;
+  }
+
+#site_body .content
+{
+}
+
+
+
+#site_left, #site_right 
+{
+    vertical-align: top;
+ /*   display: inline;
+    float: left;*/
+    margin-top: 2em;
+}
+
+#site_left 
+{
+    text-align: left;
+    float: left;
+    width: 100%;
+   /* width: 80%;*/
+}
+
+#site_right
+{
+    min-width: 15%;
+    position:absolute;
+    right: -1px;
+    background-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 3px 5px 10px #BBBBBB;
+}
+
+#navigation_submenu_close
+{
+    background-image: url("commonui/icons/close_32.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 32px;
+    position: absolute;
+    top: 18px;
+    left: -16px;
+    width: 32px;
+}
+
+#site_footer
+{    
+    margin: 0;
+    padding: 35px 0 2px;
+    text-align: center;
+    clear: both;
+        background: transparent url(commonui/background/background_footer.png) repeat-x 0 0;
+    font-size: .75em;
+    color: #ccc;
+    font-weight: bold;
+   /* position: fixed;*/
+    width: 100%;
+    bottom: 0;
+}
+#site_footer a 
+{
+    color: #c30;
+}
+#site_footer a:hover 
+{
+    text-decoration: underline;
+    color: #669;
+}
+.inner
+{
+    padding: 1em;
+}
+h1 
+{
+    font-size: 1.8em;
+    color: #66cc00;
+}
+h2 
+{
+    color: #33377e;
+}
+h2.title,
+.fieldset .legend
+{
+    background: url("commonui/background/background_block_title.png") no-repeat right #31c3d2;
+    color: #FFFFFF;
+    padding: 1px 20px 2px;
+    font: 1.05em Verdana;
+    clear: both;
+}
+h3.title
+{
+    border-bottom: 1px solid;
+    
+    /* The following may not work with wider page widths, probably need a better image or define only for certain places */
+    border: 0 none;
+    background: url("commonui/background/background_line_1000_2.png") no-repeat scroll -150px bottom transparent;
+    line-height: 1em;
+    padding: 1px 5px 4px;
+}
+p { padding: 0px 8px; }
+
+table { ; }
+th, td    { vertical-align: top; }
+table h1 { margin: 0; }
+
+.icon
+{
+    display: inline-block;
+    margin-right: 5px;
+    height: 24px;
+    width: 24px;
+}
+
+.iconneworder
+{
+    background-image: url(commonui/icons/box_24.png);
+}
+
+.indent1    { text-indent: 1em; }
+.indent2    { text-indent: 2em; }
+.indent3    { text-indent: 3em; }
+
+.a_left     { text-align: left; }
+.a_center   { text-align: center; }
+.a_right    { text-align: right; }
+
+.right      { float: right; }
+.left       { float: left; }
+.clear      { clear: both; }
+.unfloat    { float: none; }
+.hidden     { display: none; }
+  
+table.report-table
+{
+    width : 100%;
+    height : 500px;
+    background-color: Red;
+    border-style : dashed;
+    border : top;
+    border-color : Black;
+    border-width: thick;
+}

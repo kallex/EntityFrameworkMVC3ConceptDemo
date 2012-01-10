@@ -1,0 +1,40 @@
+@model ProjectStatusReporting.MVCModel.EditProjectInterestGroupData
+
+@{
+    ViewBag.Title = "Edit Project Interest Groups";
+}
+
+<h2>Edit Project Interest Groups</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Project Interest Groups</legend>
+        @Html.HiddenFor(model => model.ProjectId)
+        @Html.HiddenFor(model => model.returnViewName)
+        <h2>Project Interest Groups</h2>
+        <p>
+		        @for(int i = 0; i < Model.InterestGroupList.Count; i++) 
+        {
+            <div>
+            @Html.EditorFor(x => x.InterestGroupList[i], "InterestGroup")
+            </div>
+        }
+		            <input type="submit" name="button" value="Add Measurement" />
+        </p>
+
+
+        <p>
+            <input type="submit" name="button" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

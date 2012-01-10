@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "_ProjectStatusReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    Projektin Statusraportti</h2>
+<table class="report-table" id="Main" width="1024" style="height: 768px">
+    <tr>
+        <td>@RenderSection("HeaderBar", true)</td>
+        <td align="right">
+        <table>
+        <tr><td>@RenderSection("Owner", true)</td></tr>
+        <tr><td>@RenderSection("UpdatedAt", true)</td></tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="report-table" id="Middle">
+                <tr>
+                    <td>@RenderSection("ProjectGoal", true)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="report-table" id="MiddleSplit">
+                            <tr>
+                                <td>
+                                    <table class="report-table" id="MiddleLeft">
+                                        <tr>
+                                            <td id="LeftFirst">@RenderSection("ProjectMeasurements", true)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="LeftSecond">@RenderSection("ProjectActions", true)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="LeftThird">@RenderSection("ProjectInfo", true)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table class="report-table" id="MiddleRight">
+                                        <tr>
+                                            <td id="RightFirst">@RenderSection("ProjectInterestGroup", true)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="RightSecond">@RenderSection("ProjectResults", true)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="RightThird">@RenderSection("ProjectChallenges", true)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="RightFourth">@RenderSection("ProjectCounterActions", true)
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr id="StatusBar">
+        <td>@RenderSection("StatusBar", true)
+        </td>
+    </tr>
+</table>

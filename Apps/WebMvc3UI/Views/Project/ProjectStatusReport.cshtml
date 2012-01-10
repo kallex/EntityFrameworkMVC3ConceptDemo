@@ -1,0 +1,93 @@
+﻿@model ProjectStatusReporting.MVCModel.Project
+
+@{
+    ViewBag.Title = "ProjectStatusReport";
+    Layout = "~/Views/Shared/_ProjectStatusReportLayout.cshtml";
+}
+
+<h2>ProjectStatusReport</h2>
+
+@section HeaderBar
+{
+    <div class="headerbar">Projektiesitys:</div>
+    <div class="headerbar">Strateginen teema/alateema/@Model.ProjectInfo.ProjectInfoName</div>
+}
+
+@section Owner
+{
+<div class="projectowner">Owner: @Model.ProjectStatusInfo.ProjectStatusInfoOwner</div>
+}
+
+@section UpdatedAt
+{
+<div class="projectupdatedat">Updated: @Model.ProjectStatusInfo.ProjectStatusInfoUpdated</div>
+}
+
+@section ProjectGoal
+{
+<div class="projectgoal">Project goal</div>
+<div>@Model.ProjectStatusInfo.ProjectStatusInfoGoal</div>
+}
+
+@section ProjectMeasurements
+{
+<div class="projectmeasurements">@Html.ActionLink("Project measurements", "EditProjectMeasurement", 
+                                                    new { id=Model.ProjectId, returnUrl="ProjectStatusReport" })</div>
+@foreach(var projectMeasurement in Model.ProjectStatusInfo.Measurements)
+{
+    <div>@projectMeasurement.ProjectMeasurementText</div><div>Color here: @projectMeasurement.ProjectMeasurementStatus</div>
+}
+}
+
+@section ProjectActions
+{
+<div class="projectactions">Project actions</div>
+@foreach (var projectAction in Model.ProjectStatusInfo.Actions)
+{
+    <div>@projectAction.ProjectActionText</div><div>Color here: @projectAction.ProjectActionStatus</div>
+}
+}
+
+@section ProjectInfo
+{
+<div class="projectinfo">Project info</div>
+}
+
+@section ProjectInterestGroup
+{
+<div class="projectinterestgroup">Project Interest Group</div>
+@foreach (var item in Model.ProjectStatusInfo.InterestGroups)
+{
+    <div>@item.InterestGroupName</div>
+}
+}
+@section ProjectResults
+{
+<div class="projectresults">Project results</div>
+@foreach (var item in Model.ProjectStatusInfo.Results)
+{
+    <div>@item.ProjectResultText</div>
+}
+}
+@section ProjectChallenges
+{
+<div class="projectchallenges">Project challenges</div>
+@foreach (var item in Model.ProjectStatusInfo.ChallengesAndExceptions)
+{
+    <div>@item.ProjectChallengeText</div>
+}
+}
+@section ProjectCounterActions
+{
+<div class="projectcounteractions">Project counter actions</div>
+@foreach (var item in Model.ProjectStatusInfo.CounterActions)
+{
+    <div>@item.CounterActionText</div>
+}
+}
+
+
+@section StatusBar {
+<div class="statusbar">Green = tavoitteessa / aikataulussa Yellow = hieman tavoitteesta / myöhässä Red = selvästi tavoitteesta / myöhässä White = ei mittaustulosta / ei aloitettu Blue = valmis</div>
+}
+

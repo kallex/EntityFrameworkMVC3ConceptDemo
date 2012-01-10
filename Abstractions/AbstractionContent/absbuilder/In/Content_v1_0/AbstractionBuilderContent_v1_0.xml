@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AbstractionBuilder xmlns="http://tempuri.org/absbuilder_v1_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tempuri.org/absbuilder_v1_0.xsd ../../../../absbuilder/AbstractionBuilder/absbuilder/Content_v1_0/absbuilder_v1_0.xsd">
+  <Builder>
+    <Abstractions>
+      <Abstraction name="ObjectRelational">
+        <Generator name="MVCEditView_v1_0"/>
+        <Generator name="MVCControllers_v1_0"/>
+      </Abstraction>
+      <!--
+      <Abstraction name="Operation">
+        <Generator name="CSharpCode_v1_0"/>        
+      </Abstraction>
+      <Abstraction name="Documentation">
+        <Generator name="DesignDocumentation_v1_0"/>
+      </Abstraction>
+      -->
+    </Abstractions>
+    <!--<Transformations>
+      <Transformation name="OperationToDocumentation" 
+                      sourceAbstraction="Operation" 
+                      targetAbstraction="Documentation"/>
+      <Transformation name="OperationToStatusTracking"
+                      sourceAbstraction="Operation"
+                      targetAbstraction="StatusTracking"
+                      />
+      <Transformation name="StatusTrackingToDocumentation"
+                      sourceAbstraction="StatusTracking"
+                      targetAbstraction="Documentation"
+                      />
+    </Transformations>-->
+    <BuildExecution>
+      <!--
+      <TransformationItem nameRef="OperationToDocumentation" />
+      <TransformationItem nameRef="OperationToStatusTracking" />
+      <TransformationItem nameRef="StatusTrackingToDocumentation" />
+      <AbstractionItem nameRef="Operation"/>
+      <AbstractionItem nameRef="Documentation"/>
+      -->
+      <AbstractionItem nameRef="ObjectRelational"/>
+    </BuildExecution>
+  </Builder>
+</AbstractionBuilder>

@@ -1,0 +1,161 @@
+﻿
+.designarea 
+{
+    border-collapse: collapse;
+    border-width: 0px;
+   /* width: 98%;*/
+   margin: auto;
+/*   min-width: 80%;*/
+width: 100%;
+}
+.designarea .left
+{
+    width: 40%;
+    vertical-align: top;
+    padding: 10px;
+}
+.designarea .right
+{
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+}
+.designarea .content
+{
+    padding: .5em;
+}
+.designarea .info 
+{
+    overflow:scroll;
+}
+
+.designarea .icon 
+{
+    height: 18px;
+    width: 18px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    
+}
+.designarea .iconselected
+{
+    background-image: url(arrow_right.png);
+}
+
+.designarea .iconopenpage
+{
+    background-image: url(icons/document_16.png);
+}
+
+.designarea .iconedit
+{
+
+    background-image: url(icons/brush_16.png);
+}
+
+.designarea .iconmustadd
+{
+    background-image: url(icons/document_add_16.png);
+}
+
+.designarea .iconcanadd
+{
+    background-image: url(icons/brush_16.png);
+}
+
+.designarea .spacing1
+{
+    width: 24px;
+    height: 16px;
+    display: inline-block;
+}
+
+.designarea .section
+{
+    font-weight: bold;
+}
+
+
+.designarea .selectlabel 
+{
+    width: 15em;
+    display: inline-block;
+  /*  margin-left: 5px; */
+}
+
+.propertygrid 
+{
+    border-width: 0;
+}
+
+.selectionlist 
+{
+    border-collapse: collapse;
+}
+
+.selectionlist th { text-align: left; padding: 1px 24px; vertical-align: top; }
+.selectionlist hr.current
+{
+}
+
+.selectionlist td { vertical-align: middle; 
+    width: 100%; }
+.selectionlist td span {  }
+.selectionlist tr.current 
+{
+    /*    background: url(background/background_block_title.png) no-repeat right 20px #31C3D2;
+    padding-bottom: 3px;
+    font: 1.05em Verdana;*/
+}
+.selectionlist td.current 
+{
+ /*   background-color: #fff;
+    padding: 3px;*/
+}
+.selectionlist th.current  
+{
+    background: transparent url(arrow_right.png) no-repeat 3px 50%;
+}
+.selectionlist th a 
+{
+    display: inline-block; white-space: nowrap;
+    
+}
+.selectionlist th img
+{
+    float: left;
+}
+.taskarea 
+{
+}
+
+.taskarea .task 
+{
+    color: Green;
+    background: transparent url(arrow_right.png) no-repeat 3px 50%;
+    padding-left: 30px;
+}
+
+.taskarea .error 
+{
+    color: Red;
+}
+
+.taskarea .done_button a
+{
+
+    padding: 5px 10px 5px 10px;
+    background: transparent url(icons/box_48.png) no-repeat 0 50%;
+    height: 256px;
+    width: 256px;
+    display: inline-block;
+}
+
+.model_img 
+{
+    display: inline;
+    float: right;
+    background-color: #fff;
+}
+
+.designarea .icon { background-position: 50% ; }

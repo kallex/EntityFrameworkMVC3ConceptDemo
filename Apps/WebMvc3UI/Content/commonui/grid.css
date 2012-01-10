@@ -1,0 +1,248 @@
+﻿
+/* fgrid classes */
+.fgrid .selector 
+{
+    display: inline-block;
+    background-image: url(selector.png);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;  
+}
+
+.fgrid .gridhtml 
+{
+    text-decoration: underline;
+}
+
+.fgrid .hovercontent 
+{
+    position:fixed;
+    display: none;
+    border: 1px solid black;
+    background-color: White;
+    z-index: 100;
+    overflow:visible;
+}
+
+/* Pager class */
+
+.pager 
+{
+	background-color: #b2e4ff;
+	border-top: solid 1px #d0d0d0;
+}
+
+.pager .item
+{
+	background-color: White;
+	margin: 2px 5px 2px 5px;
+	padding: 2px 2px 2px 2px;
+	border: solid 1px #d0d0d0; 
+	display: inline-block;
+}
+
+.pager .current
+{
+	font-style: italic;
+}
+
+/* Grid values */
+
+.grid 
+{
+/*	border: solid 2px #33377e;	*/
+}
+
+.grid .content 
+{
+	overflow-x: scroll;
+}
+
+.grid table
+{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+.grid tr.heading 
+{
+    background: #31C3D2 url(background/background_block_title.png) no-repeat right;
+    color: #FFFFFF;
+    font: 1.05em Verdana;
+    text-transform: uppercase;
+    width: 100%;
+}
+.grid th,
+.grid td
+{
+    padding: 1px 20px 2px;
+    white-space: nowrap;
+}
+.grid th
+{
+	font-weight: normal;
+}
+
+
+
+.grid td
+{
+}
+
+.grid .w400 { width: 400px; }
+.grid .w200 { width: 200px; }
+.grid .w100 { width: 100px; }
+.grid .w50  { width: 50px; }
+
+.grid .even
+{
+	background-color: #bbffff;
+}
+
+.grid .sortheading 
+{
+/*	padding: 2px 2px 2px 2px;*/
+
+}
+
+.grid .asc,
+.grid .desc  {  background: transparent none; }
+
+.grid .sortheading div
+{
+    background: transparent url(icons/expanded.png) no-repeat 50%;
+    padding-left: 16px;
+    height: 16px;
+    margin-right: 4px;
+    display: inline;
+}
+.grid .sortheading div.asc { background-image: url(icons/downarrow.png) ; }
+.grid .sortheading div.desc { background-image: url(icons/uparrow.png) ; }
+
+/*
+.grid .sortheading .asc
+{
+	float: right;
+	background-image: url('downarrow.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+
+.grid .sortheading .desc
+{
+	float: right;
+	background-image: url('uparrow.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.grid .sortheading .unsorted
+{
+	float: right;
+	background-image: url('expanded.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+*/
+.grid .staticheading 
+{
+/*	padding: 2px 2px 2px 2px;*/
+}
+
+.grid .popup 
+{
+	display: none;	
+	position: absolute;
+    display: none;
+    border: 1px solid black;
+    background-image: url('semitran.png');
+    background-repeat: repeat; 
+}
+
+.grid .popup ul
+{
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin: 2px 2px 2px 2px;
+}
+
+.grid .views 
+{
+	
+}
+
+.grid .filter 
+{
+	display: none;
+	border: 1px solid black;
+	padding: 2px 5px 2px 5px;
+}
+
+.grid .filtertext 
+{
+	width: 20em;
+}
+
+.grid .active_filters 
+{
+	background-color: #b2e4ff;
+	border: 1px solid #33377e;
+	padding: 3px 5px 3px 5px;
+}
+
+.grid .active_filter
+{
+	display: inline-block;
+	padding: 2px 2px 2px 2px;
+} 
+
+.grid .remove_filter 
+{
+	display: inline-block;
+	background-image: url('cross.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+
+.lookup_grid 
+{
+}
+
+.lookup_grid .key 
+{
+	display: none;
+}
+
+.lookup_grid .value 
+{
+}
+
+.lookup_grid .content 
+{
+	overflow: scroll;
+}
+
+.lookup_grid table
+{
+	border-collapse: collapse;
+}
+
+.lookup_grid th
+{
+	background-color: #77ffff;
+	border-bottom: solid 1px #33377e;
+	text-align: left;
+}
+
+.lookup_grid td
+{
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}

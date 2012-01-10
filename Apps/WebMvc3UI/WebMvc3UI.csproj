@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52104816-D258-435A-A6C2-9BCDFCA97F3A}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebMvc3UI</RootNamespace>
+    <AssemblyName>WebMvc3UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages" />
+    <Reference Include="System.Web.Helpers" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Abstractions\AbstractionContent\ObjectRelational\Out\Controllers\ProjectStatusReportingControllers.designer.cs">
+      <Link>Abstraction\ProjectStatusReportingControllers.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Abstractions\ObjectRelationalABS\ObjectRelational\ModelToBusinessLogicMappingCode_v1_0.designer.cs">
+      <Link>Abstraction\ModelToBusinessLogicMappingCode_v1_0.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Abstractions\ObjectRelationalABS\ObjectRelational\MVCModelCode_v1_0.designer.cs">
+      <Link>Abstraction\MVCModelCode_v1_0.designer.cs</Link>
+    </Compile>
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IndicatorStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\cleditor\images\buttons.gif" />
+    <Content Include="Content\cleditor\images\toolbar.gif" />
+    <Content Include="Content\cleditor\jquery.cleditor.css" />
+    <Content Include="Content\commonui\arrow_right.png" />
+    <Content Include="Content\commonui\background\background_block_title.png" />
+    <Content Include="Content\commonui\background\background_button.png" />
+    <Content Include="Content\commonui\background\background_footer.png" />
+    <Content Include="Content\commonui\background\background_line_1000_2.png" />
+    <Content Include="Content\commonui\background\plated.png" />
+    <Content Include="Content\commonui\configeditor.css" />
+    <Content Include="Content\commonui\cross.png" />
+    <Content Include="Content\commonui\downarrow.png" />
+    <Content Include="Content\commonui\expanded.png" />
+    <Content Include="Content\commonui\field.css" />
+    <Content Include="Content\commonui\grid.css" />
+    <Content Include="Content\commonui\help.png" />
+    <Content Include="Content\commonui\icons\box_24.png" />
+    <Content Include="Content\commonui\icons\box_48.png" />
+    <Content Include="Content\commonui\icons\brush_16.png" />
+    <Content Include="Content\commonui\icons\close_32.png" />
+    <Content Include="Content\commonui\icons\close_48.png" />
+    <Content Include="Content\commonui\icons\document_16.png" />
+    <Content Include="Content\commonui\icons\document_add_16.png" />
+    <Content Include="Content\commonui\icons\shimmer-icons-readme.txt" />
+    <Content Include="Content\commonui\icons\user3_16x16.gif" />
+    <Content Include="Content\commonui\icons\warning_24.png" />
+    <Content Include="Content\commonui\page.png" />
+    <Content Include="Content\commonui\page_edit.png" />
+    <Content Include="Content\commonui\page_white_add.png" />
+    <Content Include="Content\commonui\selector.png" />
+    <Content Include="Content\commonui\semitran.png" />
+    <Content Include="Content\commonui\semitran2.png" />
+    <Content Include="Content\commonui\shrinked.png" />
+    <Content Include="Content\commonui\uparrow.png" />
+    <Content Include="Content\flexigrid\flexigrid.css" />
+    <Content Include="Content\flexigrid\images\bg.gif" />
+    <Content Include="Content\flexigrid\images\btn-sprite.gif" />
+    <Content Include="Content\flexigrid\images\ddn.png" />
+    <Content Include="Content\flexigrid\images\dn.png" />
+    <Content Include="Content\flexigrid\images\fhbg.gif" />
+    <Content Include="Content\flexigrid\images\first.gif" />
+    <Content Include="Content\flexigrid\images\hl.png" />
+    <Content Include="Content\flexigrid\images\last.gif" />
+    <Content Include="Content\flexigrid\images\line.gif" />
+    <Content Include="Content\flexigrid\images\load.gif" />
+    <Content Include="Content\flexigrid\images\load.png" />
+    <Content Include="Content\flexigrid\images\magnifier.png" />
+    <Content Include="Content\flexigrid\images\next.gif" />
+    <Content Include="Content\flexigrid\images\prev.gif" />
+    <Content Include="Content\flexigrid\images\up.png" />
+    <Content Include="Content\flexigrid\images\uup.png" />
+    <Content Include="Content\flexigrid\images\wbg.gif" />
+    <Content Include="Content\images\citrus.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Views\Project\EditorTemplates\ProjectAction.ascx" />
+    <Content Include="Views\Project\EditorTemplates\InterestGroup.ascx" />
+    <Content Include="Views\Project\EditorTemplates\ProjectResult.ascx" />
+    <Content Include="Views\Project\EditorTemplates\CounterAction.ascx" />
+    <Content Include="Views\Project\EditorTemplates\ProjectChallenge.ascx" />
+    <Content Include="Views\Project\EditorTemplates\ProjectInfo.ascx" />
+    <Content Include="Views\Project\EditorTemplates\ProjectMeasurement.ascx" />
+    <Content Include="Views\Project\EditorTemplates\ProjectStatusInfo.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ProjectInfoSubEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ProjectStatusInfoSubEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ProjectStatusReportLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\ProjectStatusReport.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{2F703D8F-A300-4197-BF11-F8D10C70B3BD}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Project\EditMeasurements.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62049</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
